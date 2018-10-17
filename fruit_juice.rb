@@ -21,11 +21,12 @@
 # Complete the functions in order to provide this functionality.
 
 class Jug
+    @@MAX_CAPACITY=400ml
     def initialize(capacity)
     end
 
     def add(amount, type)
-    end
+    endgit s
 
     def pour(amount)
     end
