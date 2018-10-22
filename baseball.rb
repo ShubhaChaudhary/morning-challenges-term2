@@ -25,16 +25,24 @@
 #
 # For more information on baseball visit here: http://en.wikipedia.org/wiki/Baseball
 #
-class Baseball
-    def initialize
-    end    
-    # A public method accepting the result of an at-bat
-    # @param {string} entry - The result of an at-bat 
-    # Acceptable values: ('single', 'double', 'triple', 'homerun' or 'out') 
-    def addEntry(entry)
-    end
-    # A public method returning the current score
-    # Format: "Home: [HOME_SCORE] Away: [AWAY_SCORE]"
-    def to_s
-    end
+# class Baseball
+#     def initialize
+#     end    
+#     # A public method accepting the result of an at-bat
+#     # @param {string} entry - The result of an at-bat 
+#     # Acceptable values: ('single', 'double', 'triple', 'homerun' or 'out') 
+#     def addEntry(entry)
+#     end
+#     # A public method returning the current score
+#     # Format: "Home: [HOME_SCORE] Away: [AWAY_SCORE]"
+#     def to_s
+#     end
+# end
+def value_count(hash, value)
+    hash=hash
+    value=value
+    hash.values.count(value)
+    
+    
 end
+p value_count({a: 1,b: 1,c: 5,d: 3},1)

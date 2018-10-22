@@ -1,4 +1,4 @@
-class Array
+codeclass Array
   def square
     # create your square method here
   end

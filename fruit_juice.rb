@@ -21,14 +21,20 @@
 # Complete the functions in order to provide this functionality.
 
 class Jug
-    @@MAX_CAPACITY=400ml
-    def initialize(capacity)
+    @@MAX_CAPACITY=400
+    def initialize
+        @concentration = 0
+        @amount=0
     end
 
     def add(amount, type)
-    endgit s
+       juice=Juice.new(type)
+        @amount+=@amount
+    end
 
     def pour(amount)
+        @amount=amount
+        @amount-=@amount
     end
 
     def getTotalAmount
@@ -36,4 +42,13 @@ class Jug
 
     def getConcentration(type)
     end
+    def self.capacity=(capacity)
+        @@MAX_CAPACITY = capacity
+    end    
 end
+class Juice
+    attr_accessor :type,:capacity 
+end    
+
+ 
+p Jug.capacity=500
